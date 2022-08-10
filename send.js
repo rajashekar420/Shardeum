@@ -2,7 +2,7 @@ var Tx     = require('ethereumjs-tx').Transaction
 const Web3 = require('web3')
 const web3 = new Web3('https://liberty10.shardeum.org/')
 
-const ToAccount ="to whom your sending"; // change this tkt to destination address
+const ToAccount ="to whom your sending"; // change this text to destination address
 const privatekey=Buffer.from('Replace this txt with Your private Key','hex'); // private key in between the quotes
 
 web3.eth.getTransactionCount(ToAccount,(err,txCount)=>{
